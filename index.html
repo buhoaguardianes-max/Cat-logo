@@ -4,6 +4,30 @@
   <meta charset="UTF-8">
   <title>Catálogo de Productos</title>
   <style>
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      width: 100%;
+      background: linear-gradient(90deg, #6a00ffcc 0%, #ff9800cc 40%, #ff3c00cc 70%, #2c0064cc 100%);
+      box-shadow: 0 2px 20px #0008;
+      padding-bottom: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .contacto {
+      text-align: left;
+      color: #fff;
+      font-size: 1.2em;
+      background: linear-gradient(90deg, #ff9800 0%, #2c0064 50%, #ff9800 100%);
+      border-radius: 12px;
+      padding: 10px 28px;
+      box-shadow: 0 0 20px #6a00ff55;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      width: fit-content;
+    }
     body {
   font-family: 'Segoe UI', Arial, sans-serif;
   background: linear-gradient(135deg, #6a00ff 0%, #ff9800 40%, #ff3c00 70%, #2c0064 100%);
@@ -25,22 +49,31 @@
       display: block;
     }
     h1 {
-      text-align: center;
-      font-size: 2.8em;
-      margin-top: 40px;
-      margin-bottom: 40px;
-      background: linear-gradient(90deg, #ff9800, #ff3c00, #fff700);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      text-fill-color: transparent;
-      letter-spacing: 2px;
-      text-shadow: 0 0 20px #ff9800, 0 0 40px #ff3c00;
+  text-align: center;
+  font-size: 2.8em;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  background: linear-gradient(150deg, #1a0033 0%, #ff9800 30%, #ff3c00 60%, #1a0033 100%);
+  color: #fff;
+  letter-spacing: 2px;
+  text-shadow:
+    2px 2px 12px #000a,
+    0 0 20px #ff9800,
+    0 0 30px #ff3c00;
     }
   </style>
 </head>
 <body>
-  <h1>Catálogo de Productos</h1>
+  <div class="topbar">
+    <div style="display: flex; align-items: center; justify-content: center; gap: 32px;">
+      <h1 style="margin: 0;">Fotos de Productos</h1>
+  <img src="assets/Logo.png" alt="Logo" style="height: 100px; border-radius: 12px; box-shadow: 0 0 16px #ff9800; background: #fff2; padding: 6px;">
+    </div>
+    <div class="contacto">
+      <div><strong>Contáctanos:</strong> 999915296</div>
+      <div><strong>Facebook:</strong> <a href="https://www.facebook.com/share/v/17DkGfusFF/" target="_blank" style="color: #ff9800; text-decoration: underline;">Buho-GuardianesJauja</a></div>
+    </div>
+  </div>
   <div class="galeria">
   <img src="assets/IMG_1777.jpg" alt="Producto 1">
   <img src="assets/IMG_1778.jpg" alt="Producto 2">
@@ -74,4 +107,5 @@
   </div>
 </body>
 </html>
+
 
